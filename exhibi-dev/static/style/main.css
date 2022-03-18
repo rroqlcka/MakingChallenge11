@@ -1,0 +1,502 @@
+body {
+    background-color: #F2F3F7;
+    overflow-x: hidden;
+}
+
+.body-center {
+    min-width: 1995px;
+    max-width: 2028px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.iframebox {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+}
+
+.iframebox iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cards-list-title {
+    margin-top: 560px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cards-list-box {
+    position: absolute;
+    max-width: 1410px;
+    width: 71%;
+}
+
+.current-position-map {
+    position: absolute;
+    border-color: #CED4DA;
+    max-width: 2028px;
+    width: 71%;
+    height: 500px;
+    border-radius: 0.8em;
+    margin: 20px auto 30px 0px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 0;
+}
+
+.wrap {
+    max-width: 100%;
+}
+
+.show-card {
+    max-width: 332px;
+    max-height: 570px;
+    width: 325px;
+    height: 570px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+/* 로그인 회원가입 프로필 로그아웃 지도검색 버튼 위치 설정 시작 */
+.header-postion {
+    max-width: 1410px;
+    width: 100%;
+}
+
+.title_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.map-search {
+    position: relative;
+    top: 0px;
+    left: 170px;
+}
+
+.position-search {
+    position: relative;
+    top: 0px;
+    left: 180px;
+}
+
+.seach-position {
+    position: relative;
+    top: -38px;
+    left: 160px;
+}
+
+.form-select {
+    border-radius: 1rem;
+    border: 1px solid #CED4DA;
+}
+
+.sign-up {
+    position: relative;
+    left: 862px;
+    top: -1px;
+}
+
+.my-pro {
+    position: relative;
+    left: 826px;
+    top: -1px;
+}
+
+.log-in {
+    position: relative;
+    left: 850px;
+    top: -1px;
+}
+
+.log-out {
+    position: relative;
+    left: 837px;
+    top: -1px;
+}
+
+.float-left {
+    float: left;
+}
+
+
+/* 로그인 회원가입 프로필 로그아웃 지도검색 버튼 위치 설정 시작 */
+
+/*검색 박스 시작*/
+.search {
+    position: relative;
+    width: 150px;
+}
+
+.search-input {
+    text-align: center;
+}
+
+.i-search {
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    margin: 0;
+}
+
+/*검색 박스 끝*/
+
+/* 오른쪽 프레임 위치 설정 시작 */
+.middle-right {
+    position: relative;
+    max-width: 100%;
+    width: 99%;
+    margin-left: 470px;
+    margin-top: 30px;
+    /*left: 1500px;*/
+
+}
+
+/* 오른쪽 프레임 위치 설정 끝 */
+
+.middle {
+    max-width: 2028px;
+    width: 100%;
+}
+
+/* 관심 카테고리 아이콘 설정 시작*/
+.i-more {
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.interest { /* 관심 카테고리 */
+    max-width: 400px;
+    background: #F2F3F7;
+    color: #000000;
+    font-weight: 600;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* 관심 카테고리 아이콘 설정 끝 */
+
+
+/* 왼쪽 메뉴 설정 시작 */
+.left-menu {
+    position: fixed;
+    width: 400px;
+    margin-left: 122px;
+}
+
+dl {
+    margin: 0px auto 60px;
+    max-width: 400px; /* 전체 메뉴 사이즈 */
+}
+
+dt { /* 메인 메뉴 */
+    background: #F2F3F7; /* 메인 메뉴 색 */
+    /*border-left:8px solid #1F2024;*/
+    border-radius: 15px;
+    color: #000000;
+    font-weight: 600;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    /*text-transform:uppercase;*/
+    transition: all .5s;
+}
+
+dt:before {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+dt:hover {
+    cursor: pointer;
+}
+
+dt + dd { /* 전체 높이 서브 메뉴 감추기 */
+    max-height: 0px;
+}
+
+dd { /*서브 리스트 */
+    background: #F2F3F7; /* 서브 배경색 */
+    color: #000000; /*서브 글씨색*/
+    margin: 0;
+    overflow: hidden;
+    padding: 1px 15px;
+    transition: all .5s; /* 서브 리스트 열리는 시간 */
+}
+
+dt.open { /* 오픈시 메인 메뉴 */
+    background: #FFFFFF;
+    border-radius: 15px;
+    color: #000000;
+    /*margin:-5px;*/ /* 오픈시 살짝 커지는 효과 */
+}
+
+dt.open + dd { /* 서브 메뉴 리스트 */
+    /*padding: 10px 10px 10px;*/
+    /*margin:0 -5px;  오픈시 살짝 커지는 효과 */
+    max-height: 0px; /* 서브 리스트 최대 길이 */
+}
+
+.sub-list-menu {
+    width: 140px;
+    height: 30px;
+    background-color: #F2F3F7;
+    color: #000000;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.sub-list-menu:hover {
+    cursor: pointer;
+    width: 140px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 2em;
+}
+
+.menu-button {
+    margin: 10px;
+    background-color: #F2F3F7;
+    border-radius: 10px;
+    width: 260px;
+    height: 50px;
+    float: left;
+}
+
+.menu-button label {
+    width: 260px;
+    height: 50px;
+}
+
+.menu-button label span {
+    font-weight: 600;
+    padding: 15px 25px;
+    display: block;
+}
+
+.menu-button label input {
+    position: absolute;
+}
+
+.menu-button input:checked + span {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    width: 260px;
+    height: 50px;
+}
+
+.menu-button input[id="main-menu"] {
+    display: none;
+}
+
+/* 왼쪽 메뉴 설정 끝 */
+
+/* 모달 관심 카테고리 페이지 설정 시작 */
+.modal.modal-center {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal.modal-center:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog.modal-center {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 700px;
+}
+
+/* 모달 관심 카테고리 페이지 설정 끝 */
+
+/* 모달 상세페이지 설정 시작 */
+.offcanvas-bottom {
+    height: 100%; /* 밑에서 올라오는 화면 비율 설정 */
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+}
+
+/* 모달 상세페이지 설정 끝 */
+
+/* 관심 카테고리 내용 설정 시작 */
+.interest-title {
+    font-size: 25px;
+    display: block;
+    margin-left: 120px;
+}
+
+.interest-title-sub {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.interest-save-btn {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    margin-left: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2em;
+}
+
+.shadowbox {
+    box-shadow: 0 4px 12px rgb(0 0 0 / 40%);
+}
+
+.interest-cate-btn {
+    margin: 10px 10px 10px 10px;
+    background-color: #F2F3F7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F2F3F7;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    border-radius: 2em;
+    font-weight: 600;
+}
+
+.interest-cate-btn:hover {
+    background-color: #004FFF;
+    color: #FFFFFF;
+}
+
+.btn2 {
+    background-color: white;
+    color: black;
+    border-color: white;
+    border-radius: 35px;
+    padding: 10px 40px;
+    margin: 30px 15px 30px 0px;
+}
+
+.box2 {
+    margin-top: 30px;
+    height: max-content;
+}
+
+.interest-ceter {
+    display: inline-block;
+    text-align: center;
+}
+
+.ck-button {
+    margin: 10px;
+    background-color: #F2F3F7;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.ck-button label {
+    width: 100px;
+    height: 100px;
+}
+
+.ck-button label span {
+    text-align: center;
+    padding: 40px 10px;
+    display: block;
+}
+.ck-button label span:hover {
+    cursor: pointer;
+}
+
+.ck-button label input {
+    position: absolute;
+}
+
+.ck-button input:checked + span {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.ck-button input[id="interest"] {
+    display: none;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.modal-footer {
+    border-top: 0px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+}
+
+/*.i-close {*/
+/*    position: absolute;*/
+/*    top: 5px;*/
+/*}*/
+
+.btn-close {
+    position: absolute;
+    top: 5px;
+    left: 555px;
+    border-width: 10px;
+    border-color: #F2F3F7;
+    padding: 10px;
+    border-style: solid;
+}
+
+.modal-content {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.i-close {
+    font-size: 7px;
+}
+
+
+.modal-header .btn-close {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* 관심 카테고리 내용 설정 끝 */
+
+
+
